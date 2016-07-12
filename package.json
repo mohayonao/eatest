@@ -7,7 +7,15 @@
     "url": "https://github.com/mohayonao/eatest/issues"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-register": "^6.9.0",
+    "eater": "^3.0.0-5",
+    "eslint": "^3.0.1",
+    "eslint-plugin-node": "^2.0.0",
+    "npm-run-all": "^2.3.0",
+    "power-assert": "^1.4.1"
+  },
   "engines": {
     "node": ">= 4.0.0"
   },
@@ -27,5 +35,14 @@
     "type": "git",
     "url": "https://github.com/mohayonao/eatest.git"
   },
-  "scripts": {}
+  "scripts": {
+    "clean": "rm -rf npm-debug.log",
+    "eater": "eater",
+    "lint": "eslint lib test",
+    "postversion": "git push && git push --tags && npm run clean",
+    "prepublish": "npm-run-all clean lint eater",
+    "preversion": "npm-run-all clean lint eater",
+    "test": "eater --require babel-register",
+    "travis": "npm-run-all lint eater"
+  }
 }

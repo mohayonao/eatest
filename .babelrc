@@ -1,0 +1,9 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "babel-preset-power-assert"
+      ]
+    }
+  }
+}

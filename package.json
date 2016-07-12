@@ -6,7 +6,9 @@
   "bugs": {
     "url": "https://github.com/mohayonao/eatest/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "colo": "^0.3.2"
+  },
   "devDependencies": {
     "babel-preset-power-assert": "^1.0.0",
     "babel-register": "^6.9.0",

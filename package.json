@@ -1,0 +1,31 @@
+{
+  "name": "eatest",
+  "description": "test function for eater",
+  "version": "0.0.0",
+  "author": "Nao Yonamine <mohayonao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mohayonao/eatest/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "lib"
+  ],
+  "homepage": "https://github.com/mohayonao/eatest/",
+  "keywords": [
+    "eater",
+    "test"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohayonao/eatest.git"
+  },
+  "scripts": {}
+}

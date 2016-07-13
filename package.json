@@ -40,7 +40,7 @@
   "scripts": {
     "clean": "rm -rf npm-debug.log",
     "eater": "eater",
-    "lint": "eslint lib test",
+    "lint": "eslint lib test examples",
     "postversion": "git push && git push --tags && npm run clean",
     "prepublish": "npm-run-all clean lint eater",
     "preversion": "npm-run-all clean lint eater",

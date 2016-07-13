@@ -9,7 +9,9 @@ test("sync", () => {
 
 test("async", () => {
   return new Promise((resolve, reject) => {
-    setImmediate(reject(new TypeError("async error")));
+    setImmediate(() => {
+      reject(new TypeError("async error"));
+    });
   });
 });
 

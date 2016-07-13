@@ -12,5 +12,5 @@ const output = runner.stdout.toString();
 const totalSuccess = rematch(output, /✓ Total success count: \d+/);
 const totalFailure = rematch(output, /✗ Total failure count: \d+/);
 
-assert(totalSuccess === "✓ Total success count: 1");
-assert(totalFailure === "✗ Total failure count: 2");
+assert(totalSuccess === "✓ Total success count: 2");
+assert(totalFailure === "✗ Total failure count: 3");

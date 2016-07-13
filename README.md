@@ -55,6 +55,13 @@ $ eater test/example.js
 
 ![screenshot](images/screenshot.png)
 
+## API
+
+- `test(name: string, testfn: function)`
+- `test.skip(name: string, testfn: function)`
+- `test.only(name: string, testfn: function)`
+- `test.timeout: number`
+
 ## License
 
 MIT

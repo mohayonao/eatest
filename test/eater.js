@@ -13,4 +13,4 @@ const totalSuccess = rematch(output, /✓ Total success count: \d+/);
 const totalFailure = rematch(output, /✗ Total failure count: \d+/);
 
 assert(totalSuccess === "✓ Total success count: 2");
-assert(totalFailure === "✗ Total failure count: 3");
+assert(totalFailure === "✗ Total failure count: 4");

@@ -59,7 +59,11 @@ $ eater test/example.js
 
 - `test(name: string, testfn: function)`
 - `test.skip(name: string, testfn: function)`
+  - skip the test
 - `test.only(name: string, testfn: function)`
+  - exclude other tests in the same test file
+- `test.fork(name: string, testfn: function)`
+  - run the test in a child process. it is useful to avoid side effect in the test.
 - `test.timeout: number`
 
 ## License
